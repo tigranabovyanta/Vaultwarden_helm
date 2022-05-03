@@ -3,9 +3,19 @@ entries:
   vaultwarden:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-05-03T18:18:20.5527443+04:00"
+    created: "2022-05-03T18:20:20.9069468+04:00"
     description: A Helm chart for vaultwarden
-    digest: 7e7317d42cf6b52ffb920fb63d2a4c488b8b5757a0fc691c900451e6a8d0d753
+    digest: ea9b54e196bc796d44b32f28665198c7684ca11ed3c5e732e3b8610cb7ccbd06
+    name: vaultwarden
+    type: application
+    urls:
+    - https://tigranabovyanta.github.io/Vaultwarden_helm/vaultwarden-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-03T18:20:20.9031248+04:00"
+    description: A Helm chart for vaultwarden
+    digest: 81cdab1e121cc1fa23e872336a78cd81db88a3877a610755fc402b625d55e359
     name: vaultwarden
     type: application
     urls:
@@ -13,7 +23,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-05-03T18:18:20.5520124+04:00"
+    created: "2022-05-03T18:20:20.9025474+04:00"
     description: A Helm chart for vaultwarden
     digest: 0e2abbd19cbec49237f8699e6ba5b0fb1ecf0b788c01129c6faeba6dfbae7290
     name: vaultwarden
@@ -23,7 +33,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-05-03T18:18:20.5514424+04:00"
+    created: "2022-05-03T18:20:20.9019753+04:00"
     description: A Helm chart for vaultwarden
     digest: 4b2b3f765c6b52b53747d613aa21827b56c736c2669edfdafeee748b39a2a260
     name: vaultwarden
@@ -31,4 +41,4 @@ entries:
     urls:
     - https://tigranabovyanta.github.io/Vaultwarden_helm/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-05-03T18:18:20.5507445+04:00"
+generated: "2022-05-03T18:20:20.9008224+04:00"
