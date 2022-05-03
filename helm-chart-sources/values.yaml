@@ -44,7 +44,7 @@ service:
 containerport: 80
 
 ingress:
-  enabled: enabled
+  enabled: disable
   className: "nginx"
   annotations: {}
     # kubernetes.io/ingress.class: nginx
