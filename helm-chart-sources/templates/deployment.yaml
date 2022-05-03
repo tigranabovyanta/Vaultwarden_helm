@@ -25,7 +25,8 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       containers:
-        - name: ADMIN_TOKEN
+        - env:
+          name: ADMIN_TOKEN
           valueFrom:
             secretKeyRef:
               key: ADMIN_TOKEN
