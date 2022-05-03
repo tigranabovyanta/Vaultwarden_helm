@@ -3,12 +3,22 @@ entries:
   vaultwarden:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-17T19:02:37.991173+04:00"
+    created: "2022-05-03T15:59:39.337446+04:00"
+    description: A Helm chart for vaultwarden
+    digest: 0e2abbd19cbec49237f8699e6ba5b0fb1ecf0b788c01129c6faeba6dfbae7290
+    name: vaultwarden
+    type: application
+    urls:
+    - https://mattiaperi.github.io/helm-chart/vaultwarden-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-03T15:59:39.3368569+04:00"
     description: A Helm chart for vaultwarden
     digest: 4b2b3f765c6b52b53747d613aa21827b56c736c2669edfdafeee748b39a2a260
     name: vaultwarden
     type: application
     urls:
-    - https://github.com/tigranabovyanta/Vaultwarden_helm/vaultwarden-0.1.0.tgz
+    - https://mattiaperi.github.io/helm-chart/vaultwarden-0.1.0.tgz
     version: 0.1.0
-generated: "2022-04-17T19:02:37.987011+04:00"
+generated: "2022-05-03T15:59:39.3356919+04:00"
