@@ -4,8 +4,8 @@
 
 replicaCount: 1
 
-pvcname: vaultwardentest-pvc
-name: vaultwardentest
+pvcname: vaultwarden-pvc
+name: vaultwarden
 image:
   repository: vaultwarden/server
   pullPolicy: IfNotPresent
@@ -77,7 +77,7 @@ autoscaling:
 
 secret: 
   name: vaultwarden-token
-  token: tHykd9kOODVGRc4F6i+54kKu9DNpdMGUVEA2CAUeDPMzzw4JGMHGg884ck9N+Mg6
+  token: your_access_token
 
 nodeSelector: {}
 
