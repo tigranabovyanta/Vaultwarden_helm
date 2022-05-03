@@ -5,7 +5,7 @@
 replicaCount: 1
 
 pvcname: vaultwarden-pvc
-
+name: vaultwardentest
 image:
   repository: vaultwarden/server
   pullPolicy: IfNotPresent
@@ -75,8 +75,11 @@ autoscaling:
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
 
+secret: 
+  name: vaultwarden-token
+  token: tHykd9kOODVGRc4F6i+54kKu9DNpdMGUVEA2CAUeDPMzzw4JGMHGg884ck9N+Mg6
+
 nodeSelector: {}
 
 tolerations: []
 
-affinity: {}

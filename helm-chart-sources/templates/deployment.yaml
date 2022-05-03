@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vaultwarden
+  name: {{.Values.name}}
   labels:
-    app: vaultwarden
+    app: {{.Values.name}}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      app: vaultwarden
+      app: {{.Values.name}}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -18,14 +18,19 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        app: vaultwarden
+        app: {{.Values.name}}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       containers:
-        - name: vaultwarden
+        - name: ADMIN_TOKEN
+          valueFrom:
+            secretKeyRef:
+              key: ADMIN_TOKEN
+              name: {{ .Values.secret.name }}
+          name: {{.Values.name}}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:

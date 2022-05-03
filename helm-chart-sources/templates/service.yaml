@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vaultwarden
+  name: {{.Values.name}}
   labels:
-    app: vaultwarden
+    app: {{.Values.name}}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,5 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "vaultwarden.selectorLabels" . | nindent 4 }}
+    app: {{.Values.name}}
+
